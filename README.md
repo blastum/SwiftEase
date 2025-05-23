@@ -1,4 +1,4 @@
-# SwiftUtils
+# SwiftEase
 
 A collection of convenient Swift extensions to make life easier during development.
 
