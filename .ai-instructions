@@ -1,239 +1,59 @@
-# AI Assistant Instructions for TIPSParser
-
-This document provides specific coding style preferences and patterns that AI assistants should follow when working on the TIPSParser project.
+# AI Assistant Instructions for SwiftEase
 
 ## 🎯 Core Principles
 
 ### 1. **Type Inference First**
-- **ALWAYS** use type inference when the type is clear from context
-- Only specify types when necessary for clarity or when inference fails
+- Use type inference when clear from context
+- Only specify types when necessary for clarity
 
-```swift
-// ✅ PREFERRED - Use type inference
-let bonds = parser.parseMessage(data)
-let cusips = bonds.map { $0.cusip }
-let quantities = bonds.compactMap { $0.quantity }
-
-// ❌ AVOID - Unnecessary explicit types
-let bonds: [TIPSBond] = parser.parseMessage(data)
-let cusips: [String] = bonds.map { $0.cusip }
-```
-
-### 2. **Functional Programming & Chaining**
+### 2. **Functional Programming**
 - **STRONGLY FAVOR** functional manipulation over imperative loops
-- Use method chaining when it improves readability
-- Prefer `map`, `filter`, `compactMap`, `reduce` over for-loops
+- Use `map`, `filter`, `compactMap`, `reduce` over for-loops
+- Chain methods when it improves readability
 
-```swift
-// ✅ PREFERRED - Functional chains
-let validBonds = data
-    .components(separatedBy: .newlines)
-    .enumerated()
-    .compactMap { (index, line) in
-        guard isCUSIP(line) else { return nil }
-        return extractBondInfo(lines: lines, cusipIndex: index)
-    }
-    .filter { $0.quantity > 0 }
-
-// ❌ AVOID - Imperative loops
-var validBonds: [TIPSBond] = []
-for (index, line) in data.components(separatedBy: .newlines).enumerated() {
-    if isCUSIP(line) {
-        if let bond = extractBondInfo(lines: lines, cusipIndex: index) {
-            if bond.quantity > 0 {
-                validBonds.append(bond)
-            }
-        }
-    }
-}
-```
-
-### 3. **Immutability Preference**
-- Favor `let` over `var` whenever possible
+### 3. **Immutability**
+- Favor `let` over `var`
 - Use functional transformations instead of mutation
-- Create new instances rather than modifying existing ones
-
-```swift
-// ✅ PREFERRED
-let processedBonds = bonds
-    .map { TIPSBond(cusip: $0.cusip, quantity: $0.quantity * 1000) }
-
-// ❌ AVOID
-var processedBonds = bonds
-for i in 0..<processedBonds.count {
-    processedBonds[i] = TIPSBond(cusip: processedBonds[i].cusip, 
-                                 quantity: processedBonds[i].quantity * 1000)
-}
-```
-
-## 📝 Specific Swift Patterns
-
-### 1. **Optional Handling**
-- Use nil-coalescing (`??`) and optional chaining when appropriate
-- Prefer `guard let` for early returns
-- Use `compactMap` to filter out nils
-
-```swift
-// ✅ PREFERRED
-guard let quantity = extractQuantity(from: line) else { return nil }
-
-let validQuantities = lines.compactMap(extractQuantity)
-
-let result = optionalValue ?? defaultValue
-```
-
-### 2. **String Processing**
-- Use string interpolation over concatenation
-- Leverage Swift's powerful string methods functionally
-
-```swift
-// ✅ PREFERRED
-let description = "CUSIP: \(bond.cusip), Quantity: \(bond.quantity)k"
-
-let cleanedLines = lines
-    .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-    .filter { !$0.isEmpty }
-```
-
-### 3. **Collections & Sequences**
-- Use appropriate collection methods functionally
-- Prefer lazy evaluation when processing large datasets
-
-```swift
-// ✅ PREFERRED - Lazy evaluation for large datasets
-let processedData = data
-    .lazy
-    .map(processLine)
-    .filter(isValid)
-    .prefix(100)
-```
 
 ### 4. **Implicit Returns**
 - Use implicit returns in single-expression functions and closures
-- Omit `return` keyword when the entire function body is a single expression
 - Apply to switch cases, computed properties, and closure bodies
 
-```swift
-// ✅ PREFERRED - Implicit returns
-func or(_ value: @autoclosure () -> Wrapped) -> Wrapped {
-    switch self {
-    case .some(let wrapped):
-        wrapped
-    case .none:
-        value()
-    }
-}
+## 📝 Swift Patterns
 
-var displayName: String {
-    name.isEmpty ? "Anonymous" : name
-}
+### Optional Handling
+- Use `guard let` for early returns
+- Use `compactMap` to filter out nils
+- Prefer nil-coalescing (`??`) and optional chaining
 
-let doubled = numbers.map { $0 * 2 }
+### Collections
+- Use functional methods over imperative loops
+- Prefer lazy evaluation for large datasets
+- Chain collection operations
 
-// ❌ AVOID - Unnecessary explicit returns
-func or(_ value: @autoclosure () -> Wrapped) -> Wrapped {
-    switch self {
-    case .some(let wrapped):
-        return wrapped
-    case .none:
-        return value()
-    }
-}
-```
-
-## 🧪 Testing Patterns
-
-### 1. **Test Structure**
-- Use descriptive test names that explain the scenario
-- Prefer `#expect` over older assertion methods
-- Use test data that's realistic and comprehensive
-
-```swift
-// ✅ PREFERRED
-@Test func parseMessage_withMultipleTIPSBonds_extractsAllCUSIPsAndQuantities() {
-    let bonds = parser.parseMessage(sampleData)
-    
-    #expect(bonds.count == 21)
-    #expect(bonds.allSatisfy { $0.quantity > 0 })
-    #expect(bonds.map(\.cusip).allSatisfy(isCUSIP))
-}
-```
-
-### 2. **Test Data Management**
-- Keep test data realistic and representative
-- Use functional assertions when possible
-
-```swift
-// ✅ PREFERRED - Functional test assertions
-let cusips = bonds.map(\.cusip)
-#expect(cusips.contains("912810QP6"))
-#expect(bonds.first { $0.cusip == "912810QP6" }?.quantity == 76)
-```
-
-## 🏗️ Architecture Preferences
-
-### 1. **Single Responsibility**
-- Keep functions focused on one task
-- Use composition over large, complex functions
-- Prefer pure functions when possible
-
-### 2. **Error Handling**
-- Use Result types for operations that can fail
-- Prefer early returns with guard statements
+### Error Handling
+- Use `Result` types for operations that can fail
+- Prefer early returns with `guard` statements
 - Make errors descriptive and actionable
 
-```swift
-// ✅ PREFERRED
-func parseQuantity(_ input: String) -> Result<Int, ParseError> {
-    guard !input.isEmpty else { 
-        return .failure(.emptyInput) 
-    }
-    
-    return input
-        .replacingOccurrences(of: ",", with: "")
-        .flatMap(Double.init)
-        .map { Int($0 / 1000) }
-        .map(Result.success) ?? .failure(.invalidFormat)
-}
-```
+## 🧪 Testing
+- Use descriptive test names explaining the scenario
+- Prefer `#expect` over older assertion methods
+- Use functional assertions when possible
 
-## 🚫 Anti-Patterns to Avoid
+## 🚫 Anti-Patterns
+- Explicit types when inference works
+- Imperative loops instead of functional chains
+- Unnecessary variable mutation
+- Force unwrapping without justification
+- Long parameter lists
+- Print statements for debugging
 
-1. **Explicit types when inference works**
-2. **Imperative loops instead of functional chains**
-3. **Mutating variables unnecessarily**
-4. **Force unwrapping (`!`) without clear justification**
-5. **Long parameter lists (prefer structs/configuration objects)**
-6. **Print statements for debugging (use proper logging)**
-
-## 📋 Code Review Checklist
-
-When reviewing or writing code, ensure:
-
-- [ ] Type inference is used where appropriate
-- [ ] Functional patterns are preferred over imperative
-- [ ] Collections are processed with `map`/`filter`/`reduce` chains
-- [ ] Variables are immutable (`let`) when possible
-- [ ] Functions are pure and focused
-- [ ] Error handling is explicit and helpful
-- [ ] Tests cover realistic scenarios functionally
-
-## 🎨 Formatting Preferences
-
-- **Line length**: 120 characters max
-- **Indentation**: 4 spaces
-- **Trailing closures**: Use when it improves readability
-- **Vertical alignment**: Align parameters when spanning multiple lines
-
-```swift
-// ✅ PREFERRED - Clean functional style
-let result = bonds
-    .filter { $0.quantity > minQuantity }
-    .sorted { $0.cusip < $1.cusip }
-    .map { "CUSIP: \($0.cusip)" }
-    .joined(separator: "\n")
-```
+## 🎨 Formatting
+- 120 character line limit
+- 4 spaces indentation
+- Trailing closures when they improve readability
 
 ---
 
-**Remember**: These are guidelines to help maintain consistency and leverage Swift's functional programming capabilities. Always prioritize code clarity and maintainability. 
+**Remember**: Prioritize code clarity, maintainability, and Swift's functional programming capabilities. 
