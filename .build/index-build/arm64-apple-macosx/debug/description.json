@@ -1,0 +1,561 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.xctest/Contents/MacOS/SwiftEasePackageTests",
+      "packagePath" : "/Users/james/Developer/SwiftUtils",
+      "productName" : "SwiftEasePackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SwiftEase-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/sources",
+      "importPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftEase",
+      "moduleOutputPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEase.swiftmodule",
+      "objects" : [
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions.swift.o",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-enable-batch-mode",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase-Swift.h",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftutils"
+      ],
+      "outputFileMapPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEase.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift",
+        "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift",
+        "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift"
+      ],
+      "tempsPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftEasePackageTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/sources",
+      "importPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEaseTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftEasePackageTests",
+      "moduleOutputPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEasePackageTests.swiftmodule",
+      "objects" : [
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-enable-batch-mode",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/SwiftEasePackageTests-Swift.h",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftutils"
+      ],
+      "outputFileMapPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEasePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SwiftEaseTests-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/sources",
+      "importPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEase.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SwiftEaseTests",
+      "moduleOutputPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEaseTests.swiftmodule",
+      "objects" : [
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.swift.o",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/OptionalExtensionsTests.swift.o",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/SwiftEaseTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.15",
+        "-enable-batch-mode",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-F",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "swiftutils"
+      ],
+      "outputFileMapPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEaseTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift",
+        "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift",
+        "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift"
+      ],
+      "tempsPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SwiftEase" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SwiftEase",
+      "-package-name",
+      "swiftutils",
+      "-incremental",
+      "-c",
+      "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift",
+      "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift",
+      "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift",
+      "-I",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.15",
+      "-enable-batch-mode",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase-Swift.h",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftutils",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "SwiftEasePackageTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SwiftEasePackageTests",
+      "-package-name",
+      "swiftutils",
+      "-incremental",
+      "-c",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.derived/runner.swift",
+      "-I",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.15",
+      "-enable-batch-mode",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/SwiftEasePackageTests-Swift.h",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftutils",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "SwiftEaseTests" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "SwiftEaseTests",
+      "-package-name",
+      "swiftutils",
+      "-incremental",
+      "-c",
+      "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift",
+      "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift",
+      "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift",
+      "-I",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.15",
+      "-enable-batch-mode",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-F",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "swiftutils",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SwiftEase" : [
+
+    ],
+    "SwiftEasePackageTests" : [
+      "SwiftEaseTests",
+      "SwiftEase"
+    ],
+    "SwiftEaseTests" : [
+      "SwiftEase"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/sources"
+    },
+    "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/sources"
+    },
+    "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/sources"
+    },
+    "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

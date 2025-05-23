@@ -1,0 +1,4 @@
+module SwiftEase {
+    header "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase-Swift.h"
+    requires objc
+}

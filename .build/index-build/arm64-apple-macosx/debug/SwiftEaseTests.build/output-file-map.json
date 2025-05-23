@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/master.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/OptionalExtensionsTests.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/OptionalExtensionsTests.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/OptionalExtensionsTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/OptionalExtensionsTests.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/SwiftEaseTests.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/SwiftEaseTests.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/SwiftEaseTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEaseTests.build/SwiftEaseTests.swiftdeps"
+  }
+}

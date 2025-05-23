@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/master.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.derived/runner.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/runner.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/runner.swiftdeps"
+  }
+}

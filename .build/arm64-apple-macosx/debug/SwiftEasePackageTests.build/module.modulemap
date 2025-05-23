@@ -1,0 +1,4 @@
+module SwiftEasePackageTests {
+    header "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/SwiftEasePackageTests-Swift.h"
+    requires objc
+}

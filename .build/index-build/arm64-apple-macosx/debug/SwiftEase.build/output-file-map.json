@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/master.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions.swiftdeps"
+  },
+  "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase.swiftdeps"
+  }
+}
