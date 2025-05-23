@@ -8,8 +8,8 @@
 
 ### 2. **Functional Programming**
 - **STRONGLY FAVOR** functional manipulation over imperative loops
-- Use `map`, `filter`, `compactMap`, `reduce` over for-loops
-- Chain methods when it improves readability
+- Use `map`, `filter`, `compactMap`, `reduce`, or `forEach` over for-loops
+- Chain methods whenever reasonable
 
 ### 3. **Immutability**
 - Favor `let` over `var`
@@ -36,18 +36,21 @@
 - Prefer early returns with `guard` statements
 - Make errors descriptive and actionable
 
+### Architecture & Dependencies
+- Create protocols for non-trivial service classes
+- Use dependency injection via init with sensible defaults
+- Interact with protocols over concrete types
+- Mock protocols for testing
+
 ## 🧪 Testing
 - Use descriptive test names explaining the scenario
 - Prefer `#expect` over older assertion methods
 - Use functional assertions when possible
 
-## 🚫 Anti-Patterns
-- Explicit types when inference works
+## 🚫 Don'ts
+- Force unwrapping without clear justification
 - Imperative loops instead of functional chains
-- Unnecessary variable mutation
-- Force unwrapping without justification
-- Long parameter lists
-- Print statements for debugging
+- Explicit types when inference works
 
 ## 🎨 Formatting
 - 120 character line limit
