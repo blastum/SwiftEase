@@ -2,6 +2,12 @@
   "": {
     "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/master.swiftdeps"
   },
+  "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.swiftdeps"
+  },
   "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift": {
     "dependencies": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.d",
     "object": "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o",

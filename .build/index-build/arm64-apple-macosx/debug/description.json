@@ -28,6 +28,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift"
         },
         {
@@ -51,6 +55,7 @@
       "moduleName" : "SwiftEase",
       "moduleOutputPath" : "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/Modules/SwiftEase.swiftmodule",
       "objects" : [
+        "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/index-build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase.swift.o"
@@ -106,6 +111,7 @@
       ],
       "prepareForIndexing" : true,
       "sources" : [
+        "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift",
         "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift",
         "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift",
         "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift"
@@ -305,6 +311,7 @@
       "swiftutils",
       "-incremental",
       "-c",
+      "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift",
       "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift",
       "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift",
       "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift",
@@ -491,6 +498,10 @@
         {
           "kind" : "virtual",
           "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift"
         },
         {
           "kind" : "file",

@@ -28,6 +28,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift"
         },
         {
@@ -51,6 +55,7 @@
       "moduleName" : "SwiftEase",
       "moduleOutputPath" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/Modules/SwiftEase.swiftmodule",
       "objects" : [
+        "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/OptionalExtensions.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/SwiftEase.swift.o"
@@ -96,6 +101,10 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o"
         },
         {
@@ -113,6 +122,7 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift",
         "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift",
         "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift",
         "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift"
@@ -210,6 +220,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/BoolExtensionsTests.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift"
         },
         {
@@ -237,6 +251,7 @@
       "moduleName" : "SwiftEaseTests",
       "moduleOutputPath" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/Modules/SwiftEaseTests.swiftmodule",
       "objects" : [
+        "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/OptionalExtensionsTests.swift.o",
         "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/SwiftEaseTests.swift.o"
@@ -281,6 +296,10 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.swift.o"
         },
         {
@@ -298,6 +317,7 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/BoolExtensionsTests.swift",
         "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift",
         "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift",
         "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift"
@@ -318,6 +338,7 @@
       "swiftutils",
       "-incremental",
       "-c",
+      "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift",
       "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift",
       "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/OptionalExtensions.swift",
       "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/SwiftEase.swift",
@@ -418,6 +439,7 @@
       "swiftutils",
       "-incremental",
       "-c",
+      "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/BoolExtensionsTests.swift",
       "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift",
       "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/OptionalExtensionsTests.swift",
       "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/SwiftEaseTests.swift",
@@ -502,6 +524,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/BoolExtensions.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/Sources/SwiftEase/Castable.swift"
         },
         {
@@ -538,6 +564,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/BoolExtensions.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEase.build/Castable.swift.o"
         },
         {
@@ -551,6 +581,10 @@
         {
           "kind" : "file",
           "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEasePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests.swift.o"
         },
         {
           "kind" : "file",
@@ -573,6 +607,10 @@
         {
           "kind" : "virtual",
           "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/BoolExtensionsTests.swift"
         },
         {
           "kind" : "file",

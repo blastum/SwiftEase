@@ -2,6 +2,12 @@
   "": {
     "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/master.swiftdeps"
   },
+  "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/BoolExtensionsTests.swift": {
+    "dependencies": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests.d",
+    "object": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests.swift.o",
+    "swiftmodule": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/BoolExtensionsTests.swiftdeps"
+  },
   "/Users/james/Developer/SwiftUtils/Tests/SwiftEaseTests/CastableTests.swift": {
     "dependencies": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.d",
     "object": "/Users/james/Developer/SwiftUtils/.build/arm64-apple-macosx/debug/SwiftEaseTests.build/CastableTests.swift.o",
