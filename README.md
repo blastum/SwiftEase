@@ -1,23 +1,18 @@
 # SwiftUtils
 
-A Swift utilities project focusing on functional programming patterns and best practices.
+A collection of convenient Swift extensions to make life easier during development.
 
-## 🎯 Project Philosophy
+## 🎯 Purpose
 
-This project follows functional programming principles with an emphasis on:
-
-- **Type Inference First**: Using Swift's powerful type inference capabilities
-- **Functional Programming**: Preferring `map`, `filter`, `reduce` over imperative loops
-- **Immutability**: Favoring `let` over `var` and functional transformations
-- **Clean Code**: Maintaining readability and maintainability
+This repository consolidates useful Swift extensions that I create along the way to streamline common development tasks and improve productivity.
 
 ## 📋 Development Guidelines
 
-See [`.ai-instructions`](.ai-instructions) for detailed coding standards and patterns used in this project.
+See [`.ai-instructions`](.ai-instructions) for coding standards and patterns used in this project.
 
 ## 🚀 Getting Started
 
-This project uses Swift and follows modern Swift development practices with a focus on functional programming paradigms.
+This project contains various Swift extensions that can be integrated into your projects to simplify common operations.
 
 ## 🧪 Testing
 
@@ -25,4 +20,4 @@ Tests are written using Swift Testing framework with descriptive names and funct
 
 ---
 
-**Note**: This project prioritizes code clarity, maintainability, and leverages Swift's functional programming capabilities. 
+**Note**: Extensions follow Swift best practices with focus on clarity and maintainability. 
