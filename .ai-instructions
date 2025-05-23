@@ -36,6 +36,9 @@
 - Prefer early returns with `guard` statements
 - Make errors descriptive and actionable
 
+### Method Design
+- Use `@discardableResult` for methods that return useful values but perform meaningful work even when the result is ignored
+
 ### Architecture & Dependencies
 - Create protocols for non-trivial service classes
 - Use dependency injection via init with sensible defaults
