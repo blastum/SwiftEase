@@ -6,6 +6,14 @@ on:
       - trunk
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: read
+  # if pushing, cloning private, or submodules, add this:
+  id-token: write
+  actions: read
+  pull-requests: write
+
 jobs:
   bump:
     runs-on: ubuntu-latest
