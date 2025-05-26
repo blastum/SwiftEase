@@ -1,0 +1,60 @@
+name: Bump Version Tag
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all tags and history
+
+      - name: Fetch all tags
+        run: git fetch --tags
+
+      - name: Get latest semantic version tag on current branch
+        id: get_tag
+        run: |
+          set -e
+          branch=$(git rev-parse --abbrev-ref HEAD)
+          echo "Current branch: $branch"
+          tags=$(git tag --merged "$branch" | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' || true)
+          if [ -z "$tags" ]; then
+            echo "No semantic version tag found, defaulting to v0.0.0"
+            latest="v0.0.0"
+          else
+            latest=$(echo "$tags" | sort -V | tail -n1)
+          fi
+          echo "Latest semantic version tag: $latest"
+          echo "latest_tag=$latest" >> $GITHUB_OUTPUT
+
+      - name: Bump patch version
+        id: bump_version
+        run: |
+          set -e
+          tag="${{ steps.get_tag.outputs.latest_tag }}"
+          version="${tag#v}"  # Strip 'v' prefix if present
+          major=$(echo "$version" | cut -d. -f1)
+          minor=$(echo "$version" | cut -d. -f2)
+          patch=$(echo "$version" | cut -d. -f3)
+          patch=$((patch + 1))
+          new_tag="v$major.$minor.$patch"
+          echo "New tag: $new_tag"
+          echo "new_tag=$new_tag" >> $GITHUB_OUTPUT
+
+      - name: Push new tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag "${{ steps.bump_version.outputs.new_tag }}"
+          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" "${{ steps.bump_version.outputs.new_tag }}"
