@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   packages: read
   # if pushing, cloning private, or submodules, add this:
   id-token: write
